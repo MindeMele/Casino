@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Homepage</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-nav">
+        <nav>
+            <div class="logo">
+                <h1><a href="#"><span id="red">Amazon</span> Royalty</a></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><button id="play">Let's Play</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <header>
+            <div class="design">
+                <div class="images">
+                    <img id="first" src="{{ url_for('static', filename='images/card.png') }}">
+                    <img id="second" src="{{ url_for('static', filename='images/card.png') }}">
+                </div>
+                <div class="content">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" width="400px" height="80px">
+                    <div class="text">
+                        <p><span>Amazon Royalty</span> - is a free casino game where you can bet and win awesome prizes.
+                            Lorem Ipsum is simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard
+                            dummy text ever since the 1500s</p>
+                    </div>
+                    <button id="play"> Play For Free</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="container">
+            <section class="about">
+                <div class="design">
+                    <div id="title">
+                        <h1>About Game</h1>
+                    </div>
+                    <div class="row">
+                        <div class="left-col">
+                            <div id="loto">
+                                <img src="{{ url_for('static', filename='images/loto.png') }}" height="auto" width="400px">
+                            </div>
+                            <button>Read More</button>
+                        </div>
+                        <div class="right-col">
+                            <div class="text">
+                                <h1>Purpuse</h1>
+                                <p>Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s.</p>
+                            </div>
+                            <div class="text">
+                                <h1>Purpuse</h1>
+                                <p>Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s.</p>
+                            </div>
+                            <div class="text">
+                                <h1>Purpuse</h1>
+                                <p>Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-text">
+                        <p>About Game</p>
+                    </div>
+                </div>
+            </section>
+            <section class="information">
+                <div class="design">
+                    <div id="title">
+                        <h1>Game Information</h1>
+                    </div>
+                    <div class="row">
+                        <div class="left-col">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dolore hic qui
+                                    odio fugiat velit incidunt laboriosam eum labore. Facere est quibusdam accusamus
+                                    praesentium earum quae aliquid unde voluptatibus debitis, totam, porro, rerum
+                                    vel nihil perspiciatis. Veritatis ducimus exercitationem ipsum ipsam quas magnam
+                                    dolores tenetur perferendis. Beatae itaque doloremque nemo, eum quia officiis
+                                    dolor
+                                    eligendierror eius dicta, recusandae, amet quam quis suscipit rem. Officiis
+                                    distinctio
+                                    dolorsed consequatur quos, corporis delectus perspiciatis accusamus incidunt
+                                    repellat
+                                    itaque perferendis et cupiditate atque omnis ad suscipit voluptate. Facere
+                                    harum,excepturi enim animi natus nihil cumque, repellendus dignissimos iusto
+                                    libero
+                                    hicquam nisi molestias unde dolor at obcaecati temporibus fuga itaque ducimus
+                                    optio.Deleniti, aut. Minus ratione commodi optio, obcaecati eos fuga ipsa vitae
+                                    quod
+                                    blanditiis aliquid adipisci, assumenda necessitatibus nemo eligendi sunt alias
+                                    perferendis fugiat doloremque veritatis dolorem ullam ex omnis. Quibusdam ipsa
+                                    ipsamvoluptas dolor perferendis molestias dignissimos minus ex quaerat
+                                    architecto
+                                    similique ad qui corrupti non itaque quam tempora, omnis voluptates voluptatibus
+                                    corporis possimus veritatis ea perspiciatis ipsum. Mollitia culpa, praesentium
+                                    maxime provident, pariatur nemo nihil nisi iste odio explicabo impedit officiis
+                                    iusto at minima sint corrupti voluptas voluptates animi id ducimus, quasi
+                                    doloremque! Eos libero excepturi unde odio!</p>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <img src="{{ url_for('static', filename='images/port.png') }}" height="200px" width="350px">
+                            <img src="{{ url_for('static', filename='images/port.png') }}" height="200px" width="350px">
+                        </div>
+                    </div>
+                    <div class="b-text">
+                        <p>Game Information</p>                    </div>
+                </div>
+            </section>
+            <section class="play">
+                <div class="design">
+                    <div id="title">
+                        <h1>Start Play Right Now</h1>
+                    </div>
+                    <div class="content">
+                        <div class="image">
+                            <img src="{{ url_for('static', filename='images/face.png') }}" height="120px" width="120px">
+                        </div>
+                        <div class="text">
+                            <p>Amazon Royalty casino is entirely in Finnish, and our online casino is registered and
+                                operates
+                                effectively under a supervised license. In addition, our online casino security is up to
+                                date and we do
+                                not track our users for advertising purposes. That is, gaming is free,
+                                registration-free, secure, and
+                                private. So what to wait any longer? The faster a smile comes while playing, the easier
+                                it is to share it
+                                with others! The speed of play is emphasized when you want to have fun and kill for a
+                                few minutes at
+                                a time. Just for the sake of fun gaming, we have set up an Internet fun magnet casino
+                                where you can
+                                easily spend time from minutes to several hours. So all games work on the principle of
+                                play money,
+                                which means that you can't lose real money in our games to get the right prizes. So that
+                                means you
+                                can’t lose and you can’t win anything. The main purpose of the games is thus safe fun
+                                and testing of
+                                different types of games so that you can find your favorite games.</p>
+                        </div>
+                        <div class="b-play">
+                            <button id="play">Play For Free</button>
+                        </div>
+                    </div>
+                    <div class="b-text">
+                        <p>Start Play Right Now</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}
